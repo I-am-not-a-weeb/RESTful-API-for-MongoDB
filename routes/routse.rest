@@ -1,0 +1,42 @@
+GET http://localhost:3000/productsdb/products
+Content-Type: application/json
+
+{
+    "query":
+    {
+        "price":300
+    },
+    "projection":
+    {
+        
+    },
+    "sort":
+    {
+        
+    }
+}
+
+###
+
+POST http://localhost:3000/productsdb/products
+Content-Type: application/json
+
+{
+    "name": "Product 3",
+    "price": 300,
+    "description": "Product 1 description",
+    "quantity": 30,
+    "unit": "pcs"
+}
+
+###
+
+PUT http://localhost:3000/productsdb/products/
+Content-Type: application/json
+
+{
+    "update":
+    {
+        "unit":"m2"
+    }
+}
